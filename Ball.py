@@ -26,8 +26,8 @@ class Ball:
         self.ball.setx(self.ball.xcor() + self.direction_x)
         self.ball.sety(self.ball.ycor() + self.direction_y)
 
-        if self.ball.ycor() >= up_limit+40:
-            self.ball.sety(up_limit+40)
+        if self.ball.ycor() >= up_limit:
+            self.ball.sety(up_limit)
             self.direction_y *= -1
 
         elif self.ball.ycor() < player_down_limit:
